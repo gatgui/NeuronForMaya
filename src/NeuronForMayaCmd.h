@@ -1,6 +1,6 @@
-#pragma once
+#ifndef NeuronForMayaCmd_h
+#define NeuronForMayaCmd_h
 
-#include <windows.h>
 #include "maya/MPxCommand.h"
 #include <NeuronForMayaDevice.h>
 
@@ -22,3 +22,5 @@ private:
     MString         mDeviceName;
     bool            mStart;
 };
+
+#endif

@@ -6,7 +6,7 @@
 MStatus initializePlugin( MObject obj )
 { 
     MStatus   status;
-    MFnPlugin plugin( obj, "Autodesk", "2017", "Any");
+    MFnPlugin plugin( obj, "Autodesk", "Any", "Any");
 
     status = plugin.registerNode( "NeuronForMayaDevice", 
         NeuronForMayaDevice::id,

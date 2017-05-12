@@ -1,6 +1,10 @@
-#pragma once
+#ifndef NeuronForMayaDevice_h
+#define NeuronForMayaDevice_h
 
+#ifdef _WIN32
+#include <winsock2.h>
 #include <windows.h>
+#endif
 #include <vector>
 #include "maya/MPxThreadedDeviceNode.h"
 #include "maya/MDagPath.h"
@@ -61,3 +65,5 @@ private:
     static bool                bRecord;
     static bool                bLive;
 };
+
+#endif

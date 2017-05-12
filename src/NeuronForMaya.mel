@@ -1,13 +1,12 @@
 global proc createNeuronCap(string $characterNodeName)
 {
-	createNeuronSkeleton($characterNodeName);
 	string $deviceName = $characterNodeName+"_Device";
-	createNeuronDevice($deviceName);	
+	createNeuronSkeleton($characterNodeName);
+	createNeuronDevice($deviceName);
 	createUnitconversions($characterNodeName);
-	connectNodes($characterNodeName, $deviceName);	
+	connectNodes($characterNodeName, $deviceName);
 	NeuronForMayaCmd -s true -dn $deviceName;
 }
-
 
 global proc createNeuronSkeleton(string $characterNodeName)
 {

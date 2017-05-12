@@ -1,0 +1,7 @@
+/release
+/debug
+/NeuronSDK
+/.build
+excons.cache
+*.dblite
+*.zip
